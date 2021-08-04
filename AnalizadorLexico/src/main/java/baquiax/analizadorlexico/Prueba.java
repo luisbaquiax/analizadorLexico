@@ -26,6 +26,7 @@ public class Prueba {
         for (int i = 0; i < cadena.length(); i++) {
             System.out.println(cadena.charAt(i));
         }
+        System.out.println("holas");
     }
 
     public static boolean esNumero(String cadena) {
