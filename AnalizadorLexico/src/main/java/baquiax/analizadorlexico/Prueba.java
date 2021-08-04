@@ -28,6 +28,7 @@ public class Prueba {
         }
         System.out.println("holas");
         System.out.println("otro hola");
+        System.out.println("otroa jaja");
     }
 
     public static boolean esNumero(String cadena) {
