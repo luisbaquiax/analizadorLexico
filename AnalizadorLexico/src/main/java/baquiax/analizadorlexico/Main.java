@@ -9,19 +9,14 @@ package baquiax.analizadorlexico;
  *
  * @author luis
  */
-public class Probando {
+public class Main {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println(puntoPorEnMedio("5"));
+        new Ventana().setVisible(true);
     }
-    
-    public static boolean puntoPorEnMedio(String cadena) {
-        return (!".".equals(cadena.substring(0, 1)))
-                && (!".".equals(cadena.substring(cadena.length() - 1, cadena.length())));
-    }
-    
+
 }
