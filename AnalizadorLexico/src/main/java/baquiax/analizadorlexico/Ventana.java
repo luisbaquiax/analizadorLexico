@@ -127,7 +127,7 @@ public class Ventana extends javax.swing.JFrame {
 
     private void btnReiniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReiniciarActionPerformed
         // TODO add your handling code here:
-        this.txtListados.setText("");
+        this.txtCadena.setText("");
     }//GEN-LAST:event_btnReiniciarActionPerformed
 
 
