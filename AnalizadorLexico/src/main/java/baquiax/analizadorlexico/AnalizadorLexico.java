@@ -39,6 +39,7 @@ public class AnalizadorLexico {
 
     private void analizar(String cadenaEntrada) {
         char[] arreglo = cadenaEntrada.toCharArray();
+
         for (int i = 0; i < cadenaEntrada.length(); i++) {
             if (arreglo[i] == '\n') {
                 arreglo[i] = ' ';
@@ -68,6 +69,9 @@ public class AnalizadorLexico {
             String ultimaCadena = cadena.substring(posicion.getPosicon() + 1, cadena.length());
             System.out.println("ultima cadena -- > " + ultimaCadena);
             partes.add(ultimaCadena);
+        }
+        if (this.contieneSoloUnaCadena(cadena)) {
+            partes.add(cadena);
         }
         for (String parteCadena : partes) {
             System.out.println("cadena -> " + parteCadena);
@@ -227,6 +231,10 @@ public class AnalizadorLexico {
             }
         }
         return (contadorSimbolos == cadena.length());
+    }
+
+    public boolean contieneSoloUnaCadena(String cadena) {
+        return (!cadena.contains(" ") || !cadena.contains("\n"));
     }
 
     public ArrayList<String> getEnteros() {
